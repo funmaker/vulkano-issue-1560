@@ -1,0 +1,7 @@
+[package]
+name = "vulkano-issue-1560"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+vulkano = { path = "./vulkano/vulkano" }

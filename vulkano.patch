@@ -1,0 +1,15 @@
+diff --git a/vulkano/src/command_buffer/synced/base.rs b/vulkano/src/command_buffer/synced/base.rs
+index 4cd60b86..7e75be17 100644
+--- a/vulkano/src/command_buffer/synced/base.rs
++++ b/vulkano/src/command_buffer/synced/base.rs
+@@ -545,6 +545,10 @@ impl SyncCommandBufferBuilder {
+                     resource_ty,
+                     resource_index,
+                 };
++                
++                for builder_key in self.resources.keys() {
++                    builder_key == &key;
++                }
+ 
+                 // Note that the call to `entry()` will lock the mutex, so we can't keep it locked
+                 // throughout the function.
