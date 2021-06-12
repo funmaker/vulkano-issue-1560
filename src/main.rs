@@ -60,17 +60,7 @@ fn main() {
 	                   0,
 	                   0,
 	                   [256, 256, 1],
-	                   1).unwrap()
-	       .copy_image(image3.clone(),
-	                   [0, 0, 0],
-	                   0,
-	                   0,
-	                   image1.clone(),
-	                   [0, 0, 0],
-	                   0,
-	                   0,
-	                   [256, 256, 1],
 	                   1).unwrap();
 	
-	builder.build().unwrap();
+	builder.build().unwrap(); // Crash
 }
